@@ -1,17 +1,26 @@
-#09
-x = int(input('Podaj liczbę całkowitą: '))
-if x < 0:
-    x -= 1
-elif x > 0:
+#10
+for i in range(100):
+    print(i + 1)
+x = 0
+while x < 100:
     x += 1
-print(f'x = {x}')
-if x % 2 == 0:
-    print(f'liczba {x} jest parzysta')
-elif x % 2 != 0:
-    print(f'liczba {x} jest nieparzysta')
+    print(x)
 
 
-#08
+#09
+# x = int(input('Podaj liczbę całkowitą: '))
+# if x < 0:
+#     x -= 1
+# elif x > 0:
+#     x += 1
+# print(f'x = {x}')
+# if x % 2 == 0:
+#     print(f'liczba {x} jest parzysta')
+# elif x % 2 != 0:
+#     print(f'liczba {x} jest nieparzysta')
+
+
+#085
 # x1 = float(input("Podaj pierwszą liczbę: "))
 # x2 = float(input("Podaj drugą liczbę: "))
 # z = input("Wybierz znak działąnia (* + - /): ")
