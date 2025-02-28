@@ -1,10 +1,20 @@
+#11
+x = 101
+while x > 11:
+    x -= 1
+    if x % 7 == 0:
+        continue
+    print(x, end=' ')
+    
+
+
 #10
-for i in range(100):
-    print(i + 1)
-x = 0
-while x < 100:
-    x += 1
-    print(x)
+# for i in range(100):
+#     print(i + 1)
+# x = 0
+# while x < 100:
+#     x += 1
+#     print(x)
 
 
 #09
