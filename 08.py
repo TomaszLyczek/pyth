@@ -1,11 +1,17 @@
-#11
-x = 101
-while x > 11:
-    x -= 1
-    if x % 7 == 0:
+#12
+for i in range(-25, 26):
+    if i == 0:
         continue
-    print(x, end=' ')
-    
+    print(i, end=' ')
+
+
+#11
+# x = 101
+# while x > 11:
+#     x -= 1
+#     if x % 7 == 0:
+#         continue
+#     print(x, end=' ')
 
 
 #10
