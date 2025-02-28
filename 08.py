@@ -1,8 +1,20 @@
-#12
-for i in range(-25, 26):
-    if i == 0:
+#13
+wysw = 0
+pom = 0
+for i in range (1, 121):
+    if i % 5 == 0 and i % 11 == 0:
+        pom += 1
         continue
     print(i, end=' ')
+    wysw += 1
+print(f'wyswietlono {wysw}, pominięto {pom}')
+
+
+#12
+# for i in range(-25, 26):
+#     if i == 0:
+#         continue
+#     print(i, end=' ')
 
 
 #11
