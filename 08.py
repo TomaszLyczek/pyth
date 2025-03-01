@@ -1,11 +1,26 @@
+#15
+licznik = 1
+element = 1
+limit = 100
+while licznik <= limit:
+    for i in range(element):
+        print(element, end=' ')
+        licznik += 1
+        if licznik > limit: break
+    element += 1
+n = [2,3,6]
+print(n.count(2))
+print(*n)
+
+
 #14
-for i in range(1, 101):
-    if i % 2 == 0:
-        print(1, end=' ')
-    elif (i + 3) % 4 == 0:
-        print(3, end=' ')
-    elif (i + 1) % 4 == 0:
-        print(2, end=' ')
+# for i in range(1, 101):
+#     if i % 2 == 0:
+#         print(1, end=' ')
+#     elif (i + 3) % 4 == 0:
+#         print(3, end=' ')
+#     elif (i + 1) % 4 == 0:
+#         print(2, end=' ')
 
 
 #13
