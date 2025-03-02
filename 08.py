@@ -1,14 +1,26 @@
+#18
+x = 0
+suma = 0
+while(x not in range(1, 11)):
+    x = int(input('Podaj liczbę: '))
+    if (x in range (1, 11)): continue
+    print('Dwukrotność podanej liczby: ', x*2)
+    suma += x
+print('Suma: ', suma)
+
+
+
 #17
-limit = 100
-l1 = 6
-l2 = 2
-for i in range(limit):
-    if i % 2 == 0:
-        print(l1, end = ' ')
-        l1 += 2
-    else:
-        print(l2, end = ' ')
-        l2 += 1
+# limit = 100
+# l1 = 6
+# l2 = 2
+# for i in range(limit):
+#     if i % 2 == 0:
+#         print(l1, end = ' ')
+#         l1 += 2
+#     else:
+#         print(l2, end = ' ')
+#         l2 += 1
 
 
 #16
