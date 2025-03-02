@@ -1,16 +1,24 @@
-#15
-licznik = 1
-element = 1
+#16
 limit = 100
-while licznik <= limit:
-    for i in range(element):
-        print(element, end=' ')
-        licznik += 1
-        if licznik > limit: break
-    element += 1
-n = [2,3,6]
-print(n.count(2))
-print(*n)
+element = 100
+licznik = 0
+while licznik < limit:
+    element = element - licznik
+    print(element, end = ' ')
+    licznik += 1
+    if licznik == 100: print('Ostatni element: ', element)
+
+
+#15
+# licznik = 1
+# element = 1
+# limit = 100
+# while licznik <= limit:
+#     for i in range(element):
+#         print(element, end=' ')
+#         licznik += 1
+#         if licznik > limit: break
+#     element += 1
 
 
 #14
