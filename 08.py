@@ -1,12 +1,25 @@
-#16
+#17
 limit = 100
-element = 100
-licznik = 0
-while licznik < limit:
-    element = element - licznik
-    print(element, end = ' ')
-    licznik += 1
-    if licznik == 100: print('Ostatni element: ', element)
+l1 = 6
+l2 = 2
+for i in range(limit):
+    if i % 2 == 0:
+        print(l1, end = ' ')
+        l1 += 2
+    else:
+        print(l2, end = ' ')
+        l2 += 1
+
+
+#16
+# limit = 100
+# element = 100
+# licznik = 0
+# while licznik < limit:
+#     element = element - licznik
+#     print(element, end = ' ')
+#     licznik += 1
+#     if licznik == 100: print('Ostatni element: ', element)
 
 
 #15
