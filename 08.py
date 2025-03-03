@@ -1,12 +1,44 @@
+#20
+import random
+x = []
+for i in range(21):
+    x.append(random.randint(-100, 100))
+print(x)
+
+parz = []
+nparz = []
+for i in range(len(x)):
+    if x[i] % 2 == 0:
+        parz.append(x[i])
+    else:
+        nparz.append(x[i])
+parz.extend(nparz)
+print(parz)
+
+
+#19
+# liczby = []
+# for i in range(1001):
+#     if i % 6 == 0:
+#         liczby.append(str(i))
+# print(*liczby)
+# print('Ilość liczb podzielnych przez 6: ', len(liczby))
+
+# liczbyz7 = []
+# for i in liczby:
+#     if str(i).find('7') != -1: liczbyz7.append(i)
+# print(liczbyz7)
+
+
 #18
-x = 0
-suma = 0
-while(x not in range(1, 11)):
-    x = int(input('Podaj liczbę: '))
-    if (x in range (1, 11)): continue
-    print('Dwukrotność podanej liczby: ', x*2)
-    suma += x
-print('Suma: ', suma)
+# x = 0
+# suma = 0
+# while(x not in range(1, 11)):
+#     x = int(input('Podaj liczbę: '))
+#     if (x in range (1, 11)): continue
+#     print('Dwukrotność podanej liczby: ', x*2)
+#     suma += x
+# print('Suma: ', suma)
 
 
 
