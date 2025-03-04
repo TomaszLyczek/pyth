@@ -1,20 +1,29 @@
 #20
-import random
-x = []
-for i in range(21):
-    x.append(random.randint(-100, 100))
-print(x)
+# import random
+# x = []
+# for i in range(21):
+#     x.append(random.randint(-100, 100))
+# print(x)
 
-parz = []
-nparz = []
-for i in range(len(x)):
-    if x[i] % 2 == 0:
-        parz.append(x[i])
-    else:
-        nparz.append(x[i])
-parz.extend(nparz)
-print(parz)
+# parz = []
+# nparz = []
+# for i in range(len(x)):
+#     if x[i] % 2 == 0:
+#         parz.append(x[i])
+#     else:
+#         nparz.append(x[i])
+# parz.extend(nparz)
+# print(parz)
 
+lista = [1, 3, 5, 6, 498, 352, 34, 56, 3]
+l2 = []
+parzyste = lambda a: a % 2 == 0
+nieparzyste = lambda a: a % 2 == 1
+
+l2 = list(filter(parzyste, lista))
+print(lista)
+print(l2)
+print(set(filter(nieparzyste, lista)))
 
 #19
 # liczby = []
