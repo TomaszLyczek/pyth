@@ -1,3 +1,18 @@
+# #21
+poprzednia = 0
+message = 'rosnące'
+for i in range(5):
+    x = int(input(f'Podaj {i+1} liczbę: '))
+    if i == 0: poprzednia = x
+    else:
+        if x < poprzednia:
+            message = 'nierosnące'
+        poprzednia = x  
+print(message)
+
+
+
+
 #20
 # import random
 # x = []
@@ -15,15 +30,15 @@
 # parz.extend(nparz)
 # print(parz)
 
-lista = [1, 3, 5, 6, 498, 352, 34, 56, 3]
-l2 = []
-parzyste = lambda a: a % 2 == 0
-nieparzyste = lambda a: a % 2 == 1
+# lista = [1, 3, 5, 6, 498, 352, 34, 56, 3]
+# l2 = []
+# parzyste = lambda a: a % 2 == 0
+# nieparzyste = lambda a: a % 2 == 1
 
-l2 = list(filter(parzyste, lista))
-print(lista)
-print(l2)
-print(set(filter(nieparzyste, lista)))
+# l2 = list(filter(parzyste, lista))
+# print(lista)
+# print(l2)
+# print(set(filter(nieparzyste, lista)))
 
 #19
 # liczby = []
