@@ -1,16 +1,22 @@
-# #21
-poprzednia = 0
-message = 'rosnące'
-for i in range(5):
-    x = int(input(f'Podaj {i+1} liczbę: '))
-    if i == 0: poprzednia = x
-    else:
-        if x < poprzednia:
-            message = 'nierosnące'
-        poprzednia = x  
-print(message)
+#22
+num = []
+num.append(int(input('Podaj liczbę: ')))
+num.append(int(input('Podaj liczbę: ')))
+while num[len(num)-1] != num[len(num)-2]:
+    num.append(int(input('Podaj liczbę: ')))
+print(num)
 
-
+#21
+# poprzednia = 0
+# message = 'rosnące'
+# for i in range(5):
+#     x = int(input(f'Podaj {i+1} liczbę: '))
+#     if i == 0: poprzednia = x
+#     else:
+#         if x < poprzednia:
+#             message = 'nierosnące'
+#         poprzednia = x  
+# print(message)
 
 
 #20
