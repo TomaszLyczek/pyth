@@ -1,10 +1,27 @@
-#22
-num = []
-num.append(int(input('Podaj liczbę: ')))
-num.append(int(input('Podaj liczbę: ')))
-while num[len(num)-1] != num[len(num)-2]:
-    num.append(int(input('Podaj liczbę: ')))
+#23
+# num = []
+# while len(num) < 10:
+#     x = int(input('Podaj liczbę: '))
+#     if x not in num:
+#         num.append(x)
+# print(num)
+# print(len(num))
+num = set({})
+
+while len(num) < 10:
+    x = int(input('Podaj liczbę: '))
+    num.add(x)
 print(num)
+print(len(num))
+
+
+#22
+# num = []
+# num.append(int(input('Podaj liczbę: ')))
+# num.append(int(input('Podaj liczbę: ')))
+# while num[len(num)-1] != num[len(num)-2]:
+#     num.append(int(input('Podaj liczbę: ')))
+# print(num)
 
 #21
 # poprzednia = 0
