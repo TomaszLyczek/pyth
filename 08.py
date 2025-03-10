@@ -1,22 +1,34 @@
-#24
-lista = []
-samogloski = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
+#25
+V = []
 while True:
-    x = input('Podaj znak: ')
-    if x == '!':
+    x = int(input('Wprowadź pierwazą liczbę: '))
+    V.append(x)
+    y = int(input('Wprowadź drugą liczbę: '))
+    V.append(y)
+    if x * y > 1000:
         break
-    elif x in samogloski:
-        lista.insert(0, x)
-    elif x == '*':
-        if len(lista) > 0:
-            lista.pop(0)
-    elif x == '#':
-        if len(lista) > 0:
-            lista.pop()
     else:
-        lista.append(x)
-    print(lista)
+        V.append(x * y)
+    print(V)
 
+
+# lista = []
+# samogloski = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
+# while True:
+#     x = input('Podaj znak: ')
+#     if x == '!':
+#         break
+#     elif x in samogloski:
+#         lista.insert(0, x)
+#     elif x == '*':
+#         if len(lista) > 0:
+#             lista.pop(0)
+#     elif x == '#':
+#         if len(lista) > 0:
+#             lista.pop()
+#     else:
+#         lista.append(x)
+#     print(lista)
 
 
 #23
