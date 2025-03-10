@@ -1,3 +1,24 @@
+#24
+lista = []
+samogloski = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
+while True:
+    x = input('Podaj znak: ')
+    if x == '!':
+        break
+    elif x in samogloski:
+        lista.insert(0, x)
+    elif x == '*':
+        if len(lista) > 0:
+            lista.pop(0)
+    elif x == '#':
+        if len(lista) > 0:
+            lista.pop()
+    else:
+        lista.append(x)
+    print(lista)
+
+
+
 #23
 # num = []
 # while len(num) < 10:
@@ -6,13 +27,13 @@
 #         num.append(x)
 # print(num)
 # print(len(num))
-num = set({})
+# num = set({})
 
-while len(num) < 10:
-    x = int(input('Podaj liczbę: '))
-    num.add(x)
-print(num)
-print(len(num))
+# while len(num) < 10:
+#     x = int(input('Podaj liczbę: '))
+#     num.add(x)
+# print(num)
+# print(len(num))
 
 
 #22
