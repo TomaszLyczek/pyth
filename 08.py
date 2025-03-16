@@ -1,16 +1,65 @@
-#25
-V = []
-while True:
-    x = int(input('Wprowadź pierwazą liczbę: '))
-    V.append(x)
-    y = int(input('Wprowadź drugą liczbę: '))
-    V.append(y)
-    if x * y > 1000:
-        break
-    else:
-        V.append(x * y)
-    print(V)
+#26
+v = [1,2,4,3,6,8,7,7,8,3,4,5,6,7,1,3,9,1,0,4,2,3,6,9]
+podc = []
+for i in range(len(v)-2):
+    if v[i] <= v[i+1] <= v[i+2]:
+        x = v[i:i+3]
+        podc.append(x)
+print(podc)
 
+najd = []
+
+def ostel(n, lis):
+    licznik = n
+    while licznik < len(lis)-1:
+        if lis[licznik] > lis[licznik+1]:
+            break
+        licznik += 1
+    return licznik
+
+first = 0
+maxdl = 0
+for i in range(len(v)):
+    dl = ostel(i,v)-i
+    if dl > maxdl:
+        maxdl = dl
+        first = i
+
+print()
+last = ostel(first,v)
+print(v[first:last+1])
+print()
+
+vset = set(v)
+for i in vset:
+    print(f'{i} występuje {v.count(i)} razy', end = '|')
+
+
+# vset = {}
+# vset = set(v)
+# dic = {}
+# for i in vset:
+#     ilosc = 0
+#     for j in v:
+#         if j == i:
+#             ilosc += 1
+#     print(f'Element {i} występuje {ilosc} razy')
+# print(dic)
+
+
+#25
+# V = []
+# while True:
+#     x = int(input('Wprowadź pierwazą liczbę: '))
+#     V.append(x)
+#     y = int(input('Wprowadź drugą liczbę: '))
+#     V.append(y)
+#     if x * y > 1000:
+#         break
+#     else:
+#         V.append(x * y)
+#     print(V)
+# print(V)
 
 # lista = []
 # samogloski = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
